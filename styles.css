@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    color: #EFF6E0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-container {
+    min-height: 100vh;
+    background-color: #01161E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper {
+    background-color: #124559;
+    width: 70%;
+    height: 5em;
+}
+
+.calendar-wrapper {
+    display: grid;
+    width: 70%;
+    grid-template-rows: 3em 1fr;
+}
+
+.days-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #EFF6E0;
+}
+
+.day {
+    border: 1px solid #EFF6E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01161E;
+}
+
+.dates-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-square {
+    border: 1px solid #EFF6E0;
+    height: 8rem;
+    position: relative;
+}
+
+.date {
+    background-color: #124559;
+    font-size: 130%;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-square textarea {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75%;
+    background-color: #01161E;
+    color: #EFF6E0;
+    resize: none;
+    border: none;
+    outline: none;
+}
